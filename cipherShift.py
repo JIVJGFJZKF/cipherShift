@@ -16,7 +16,7 @@ class cipherShift:
         self.__msgEncrypted__ = r''
         self.__msgEncryptedFinal__ = r''
         self.__msgDecrypted__ = r''
-        self.__valChars__ = r'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        self.__valChars__ = r'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
         
     def genKeyRandom(self):
         tmpShuffled = sorted(self.__valChars__, key=lambda k: random.random())
